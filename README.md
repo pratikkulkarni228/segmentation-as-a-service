@@ -7,6 +7,7 @@ The project is based on Google's [Deeplab](https://github.com/tensorflow/models/
 The dataset used here is a well known autonomous drving dataset called [CityScapes](https://www.cityscapes-dataset.com/)
 
 ![alt text](https://github.com/pratikkulkarni228/segmentation-as-a-service/blob/master/figs/deeplab.png)
+[source](http://liangchiehchen.com/projects/DeepLab.html)
 
 ### Frameworks/ tools used:
 1. Google DeepLab
