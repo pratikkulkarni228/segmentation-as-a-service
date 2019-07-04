@@ -19,7 +19,7 @@ The dataset used here is a well known autonomous drving dataset called [CityScap
 4. Create a virtual env (OPTIONAL)
 ``conda create -n yourenvname python=x.x anaconda``
 ``source activate yourenvname``
-##### OR 
+OR
 ``pip install virtualenv``
 ``virtualenv myenv``
 ``source mypython/bin/activate``
