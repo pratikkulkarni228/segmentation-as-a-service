@@ -1,4 +1,4 @@
-# Segmentation as a Service
+# Semantic Segmentation as a Service
 #### A project that aims at building a Semantic Image Segmentation model and depoying it as a service.
 
 Semantic image segmentation, the task of assigning a semantic label, such as “road”, “sky”, “person”, “dog”, to every pixel in an image. 
