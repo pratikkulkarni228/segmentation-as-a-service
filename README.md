@@ -18,8 +18,8 @@ The dataset used here is a well known autonomous drving dataset called [CityScap
 ![alt text](https://github.com/pratikkulkarni228/segmentation-as-a-service/blob/master/figs/pred.png)
 ### How to setup the service:
 1. Clone this repository.
-2. Download the trained, converted and zipped model from [this link](https://drive.google.com/open?id=111lkKq_EvvpVut-V3oGaGbbHEWTowRQ2).
-3. Place it in the cloned repo directory
+2. [IMPORTANT] Download the trained, converted and zipped model from [this link](https://drive.google.com/open?id=111lkKq_EvvpVut-V3oGaGbbHEWTowRQ2).
+3. [IMPORTANT] Place it in the cloned repo directory
 4. Create a virtual env (OPTIONAL)  
 Using CONDA:  
 ``conda create -n yourenvname python=x.x anaconda``  
@@ -29,7 +29,7 @@ Using PIP:
 ``pip install virtualenv``  
 ``virtualenv myenv``  
 ``source mypython/bin/activate``  
-5. Run the followwing command (DO NOT SKIP THIS STEP):
+5. [IMPORTANT] Run the followwing command (DO NOT SKIP THIS STEP):
 ``pip -r requirements.txt``
 6. Once installed, run the following command to launch service:
 ``python app.py``
