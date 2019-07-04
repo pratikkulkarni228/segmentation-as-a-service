@@ -6,12 +6,16 @@ Semantic image segmentation, the task of assigning a semantic label, such as “
 The project is based on Google's [Deeplab](https://github.com/tensorflow/models/tree/master/research/deeplab) project which has also enabled numerous new applications, such as the synthetic shallow depth-of-field effect shipped in the portrait mode of the Pixel 2 and Pixel 2 XL smartphones and mobile real-time video segmentation-[source](https://ai.googleblog.com/2018/03/semantic-image-segmentation-with.html).
 The dataset used here is a well known autonomous drving dataset called [CityScapes](https://www.cityscapes-dataset.com/)
 
+![alt text](https://github.com/pratikkulkarni228/segmentation-as-a-service/blob/master/figs/deeplab.png)
+
 ### Frameworks/ tools used:
 1. Google DeepLab
 2. Tensorflow
 3. OpenCv
 4. Flask 
-
+### Service:
+![alt text](https://github.com/pratikkulkarni228/segmentation-as-a-service/blob/master/figs/home.png)
+![alt text](https://github.com/pratikkulkarni228/segmentation-as-a-service/blob/master/figs/pred.png)
 ### How to setup the service:
 1. Clone this repository.
 2. Download the trained, converted and zipped model from [this link](https://drive.google.com/open?id=111lkKq_EvvpVut-V3oGaGbbHEWTowRQ2).
