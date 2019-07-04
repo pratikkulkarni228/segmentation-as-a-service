@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Image Segmentation as a service
+		</div>
+
+		
+	</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form action="{{ url_for('predict')}}" method="POST">
+		<h2 style="color:black;"> The model has been trained on the <a href="https://www.cityscapes-dataset.com/">cityscapes dataset</a>. For the best performance please use city scape URLS. </h2>	
+		<h3 style="color:black;">Following are a few test URLs</h3>				
+		<p>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY2CBj4oCDhdgQqCxerNDvNuptrwmCE-EpVbCTNKws4nCEpzvaOQ</p>
+		<p>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_dqAUVRUPdbfTZaigRCkUxnCLhVPke5Q7W6Qv6oeHdwV1PWDJ</p>
+		<p>https://www.vision.ee.ethz.ch/~csakarid/Model_adaptation_SFSU_dense/images/Foggy_Cityscapes-DBF/dusseldorf_000164_000019_leftImg8bit_crop.png</p>
+		<h3 style="color:black;">Enter Your URL for the image Here:</h3>		
+
+		<!-- <input type="text" name="url"/> -->
+		<textarea name="url" rows="5" cols="120" font></textarea>
+		</p>Segmentation time: &lt 3 seconds. Refresh if the webpage is stuck and try again.</p>
+		
+		<br/>
+
+		<input type="submit" class="btn-info" value="Segment">
+		
+	</form>
+		
+	</div>
+
+	
+	
+
+</body>
+</html>

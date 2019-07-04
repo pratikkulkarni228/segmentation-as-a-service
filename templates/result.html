@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			
+			Image Segmentation as a service
+
+		</div>
+		
+	</div>
+	</header>
+	<h1 style="color:black;">Segmentation results</h1>
+	<div class="results">
+		
+	<h2 style="color:black;">Original image</h2>
+	<img src="{{url_for('static', filename='resized.jpg')}}" />
+
+	<h2 style="color:black;">Segmented image</h2>
+	<img src="{{url_for('static', filename='seg_image.jpg')}}" />
+
+	</div>
+
+</body>
+</html>
