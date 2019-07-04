@@ -29,9 +29,9 @@ Using PIP:
 ``pip install virtualenv``  
 ``virtualenv myenv``  
 ``source mypython/bin/activate``  
-5. [IMPORTANT] Run the followwing command (DO NOT SKIP THIS STEP):
+5. [IMPORTANT] Run the followwing command (DO NOT SKIP THIS STEP):  
 ``pip -r requirements.txt``
-6. Once installed, run the following command to launch service:
+6. Once installed, run the following command to launch service:  
 ``python app.py``
 7. Open http://127.0.0.1:5001/ to access the service.
 8. Happy Segmenting
