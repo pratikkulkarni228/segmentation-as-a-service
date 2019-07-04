@@ -1,12 +1,38 @@
 # Semantic Segmentation as a Service
-### A project that aims at building a Semantic Image Segmentation model and depoying it as a service.
+## A project that aims at building a Semantic Image Segmentation model and depoying it as a service.
 
-#### Introduction
+### Introduction
 Semantic image segmentation, the task of assigning a semantic label, such as “road”, “sky”, “person”, “dog”, to every pixel in an image. 
 The project is based on Google's [Deeplab](https://github.com/tensorflow/models/tree/master/research/deeplab) project which has also enabled numerous new applications, such as the synthetic shallow depth-of-field effect shipped in the portrait mode of the Pixel 2 and Pixel 2 XL smartphones and mobile real-time video segmentation-[source](https://ai.googleblog.com/2018/03/semantic-image-segmentation-with.html).
 The dataset used here is a well known autonomous drving dataset called [CityScapes](https://www.cityscapes-dataset.com/)
 
-#### Steps involving entire training process:
+### Frameworks/ tools used:
+1. Google DeepLab
+2. Tensorflow
+3. OpenCv
+4. Flask 
+
+### How to setup the service:
+1. Clone this repository.
+2. Download the trained, converted and zipped model from [this link](https://drive.google.com/open?id=111lkKq_EvvpVut-V3oGaGbbHEWTowRQ2).
+3. Place it in the cloned repo directory
+4. Create a virtual env (OPTIONAL)
+Using conda:
+``conda create -n yourenvname python=x.x anaconda``
+``source activate yourenvname``
+OR 
+Using pip:
+``pip install virtualenv``
+``virtualenv myenv``
+``source mypython/bin/activate``
+5. Run the followwing command (DO NOT SKIP THIS STEP):
+``pip -r requirements.txt``
+6. Once installed, run the following command to launch service:
+``python app.py``
+7. Open http://127.0.0.1:5001/ to access the service.
+8. Happy Segmenting
+
+### Steps involving entire training process:
 1. Register and Download the following files from cityscapes dataset website. leftimg gtfine
 ``leftImg8bit_trainvaltest.zip (11GB) [md5]`` and ``gtFine_trainvaltest.zip (241MB) [md5]``
 2. Clone the deeplab [respository](https://github.com/tensorflow/models) and follow the further instructions from [here](https://github.com/tensorflow/models/tree/master/research/deeplab).
