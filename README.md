@@ -1,2 +1,2 @@
 # Segmentation as a Service
-This project aims at building an image segmentation model using Google's DeepLab and depoying the model as a service.
+#### A project that aims at building a Semantic Image Segmentation model and depoying it as a service.
