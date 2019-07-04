@@ -1,6 +1,18 @@
 # Semantic Segmentation as a Service
-#### A project that aims at building a Semantic Image Segmentation model and depoying it as a service.
+### A project that aims at building a Semantic Image Segmentation model and depoying it as a service.
 
+#### Introduction
 Semantic image segmentation, the task of assigning a semantic label, such as “road”, “sky”, “person”, “dog”, to every pixel in an image. 
 The project is based on Google's [Deeplab](https://github.com/tensorflow/models/tree/master/research/deeplab) project which has also enabled numerous new applications, such as the synthetic shallow depth-of-field effect shipped in the portrait mode of the Pixel 2 and Pixel 2 XL smartphones and mobile real-time video segmentation-[source](https://ai.googleblog.com/2018/03/semantic-image-segmentation-with.html).
 The dataset used here is a well known autonomous drving dataset called [CityScapes](https://www.cityscapes-dataset.com/)
+
+#### Steps involving entire training process:
+1. Register and Download the following files from cityscapes dataset website. leftimg gtfine
+``leftImg8bit_trainvaltest.zip (11GB) [md5]`` and ``gtFine_trainvaltest.zip (241MB) [md5]``
+2. Clone the deeplab [respository](https://github.com/tensorflow/models) and follow the further instructions from [here](https://github.com/tensorflow/models/tree/master/research/deeplab).
+3. Convert your dataset to tfrecord format that is used by tensorflow, from [here](https://github.com/tensorflow/models/blob/master/research/deeplab/g3doc/cityscapes.md)
+4. Download the model checkpoint from [here](https://github.com/tensorflow/models/blob/master/research/deeplab/g3doc/model_zoo.md) (This serves as an initial model checkpoint which will be used to train further)
+5. Train, evaluate and visualise your model results by following the instructions [here](https://github.com/tensorflow/models/blob/master/research/deeplab/g3doc/cityscapes.md).
+6. Convert the checkpoint files to a frozen graph (.pb) format for easy inference. (use export_model.py in models/research/deeplab/) and convert the .pb to .tar.gz
+7. For Inference (single image inference) run the inference.py file to generate segmented outputs
+
