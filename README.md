@@ -21,7 +21,7 @@ The dataset used here is a well known autonomous drving dataset called [CityScap
 1. Clone this repository.
 2. [IMPORTANT] Download the trained, converted and zipped model from [this link](https://drive.google.com/open?id=111lkKq_EvvpVut-V3oGaGbbHEWTowRQ2).
 3. [IMPORTANT] Place it in the cloned repo directory
-4. [OPIONAL] Create a virtual env   
+4. [OPTIONAL] Create a virtual env   
 Using CONDA:  
 ``conda create -n yourenvname python=x.x anaconda``  
 ``source activate yourenvname``  
@@ -30,7 +30,7 @@ Using PIP:
 ``pip install virtualenv``  
 ``virtualenv myenv``  
 ``source mypython/bin/activate``  
-5. [IMPORTANT] Run the followwing command (DO NOT SKIP THIS STEP):  
+5. [IMPORTANT] Run the following command (DO NOT SKIP THIS STEP):  
 ``pip -r requirements.txt``
 6. Once installed, run the following command to launch service:  
 ``python app.py``
