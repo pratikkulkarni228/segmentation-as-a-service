@@ -17,7 +17,7 @@ The dataset used here is a well known autonomous drving dataset called [CityScap
 ### Service:
 ![alt text](https://github.com/pratikkulkarni228/segmentation-as-a-service/blob/master/figs/home.png)
 ![alt text](https://github.com/pratikkulkarni228/segmentation-as-a-service/blob/master/figs/pred.png)
-### How to setup the service:
+# How to setup the service:
 1. Clone this repository.
 2. [IMPORTANT] Download the trained, converted and zipped model from [this link](https://drive.google.com/open?id=111lkKq_EvvpVut-V3oGaGbbHEWTowRQ2).
 3. [IMPORTANT] Place it in the cloned repo directory
