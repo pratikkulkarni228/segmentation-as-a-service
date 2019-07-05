@@ -11,6 +11,7 @@ import numpy as np
 from PIL import Image
 import utils
 import tensorflow as tf
+import requests
 
 app = Flask(__name__)             # create an app instance
 
@@ -66,7 +67,10 @@ class DeepLabModel(object):
         seg_map = batch_seg_map[0]
         return resized_image, seg_map
 
-MODEL = DeepLabModel('seg_op_500.tar.gz')
+try:
+    MODEL = DeepLabModel('seg_op_500.tar.gz')
+except:
+    MODEL = DeepLabModel('seg_op_500.tar')
 
 def run_visualization(model,url):
     """Inferences DeepLab model and visualizes result."""
@@ -99,12 +103,16 @@ def home():
 def predict():
     if request.method == 'POST':
         url = request.form['url']
-        print('THE type of URL is',type(url))
-		#data = [comment]
-        run_visualization(MODEL,url)
-        full_filename = os.path.join(os.getcwd(), 'seg_image.jpg')
-        print('full_filename is',full_filename)
-    return render_template('result.html',prediction = full_filename,url=url)
+        req = requests.get(url)
+        if req.status_code == 200:        
+            print('THE type of URL is',type(url))
+            #data = [comment]
+            run_visualization(MODEL,url)
+            full_filename = os.path.join(os.getcwd(), 'seg_image.jpg')
+            print('full_filename is',full_filename)
+            return render_template('result.html',prediction = full_filename,url=url)
+        else:
+            return render_template('error.html')
     
 @app.after_request
 def add_header(response):

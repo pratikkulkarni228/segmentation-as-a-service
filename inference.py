@@ -64,7 +64,10 @@ class DeepLabModel(object):
         seg_map = batch_seg_map[0]
         return resized_image, seg_map
 
-MODEL = DeepLabModel('seg_op_500.tar.gz')
+try:
+    MODEL = DeepLabModel('seg_op_500.tar.gz')
+except:
+    MODEL = DeepLabModel('seg_op_500.tar')
 
 
 def create_pascal_label_colormap():
