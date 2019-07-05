@@ -2,3 +2,4 @@ tensorflow==1.14.0
 opencv-python
 Flask
 Pillow
+requests
