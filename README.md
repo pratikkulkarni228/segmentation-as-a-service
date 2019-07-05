@@ -23,15 +23,15 @@ The dataset used here is a well known autonomous drving dataset called [CityScap
 3. [IMPORTANT] Place it in the cloned repo directory
 4. [OPTIONAL] Create a virtual env   
 Using CONDA:  
-``conda create -n yourenvname python=x.x anaconda``  
+``conda create -n yourenvname python=3.6 anaconda``  
 ``source activate yourenvname``  
 OR  
 Using PIP:  
-``pip install virtualenv``  
+``pip3 install virtualenv``  
 ``virtualenv myenv``  
 ``source mypython/bin/activate``  
 5. [IMPORTANT] Run the following command (DO NOT SKIP THIS STEP):  
-``pip -r requirements.txt``
+``pip3 install -r requirements.txt``
 6. Once installed, run the following command to launch service:  
 ``python app.py``  
 If you encounter OS error or Permission error, You might have to change the permissions of the ``app.py`` file as follows:  
