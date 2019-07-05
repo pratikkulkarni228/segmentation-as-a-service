@@ -21,7 +21,7 @@ The dataset used here is a well known autonomous drving dataset called [CityScap
 1. Clone this repository.
 2. [IMPORTANT] Download the trained, converted and zipped model from [this link](https://drive.google.com/open?id=111lkKq_EvvpVut-V3oGaGbbHEWTowRQ2).
 3. [IMPORTANT] Place it in the cloned repo directory
-4. Create a virtual env (OPTIONAL)  
+4. [OPIONAL] Create a virtual env   
 Using CONDA:  
 ``conda create -n yourenvname python=x.x anaconda``  
 ``source activate yourenvname``  
@@ -34,6 +34,8 @@ Using PIP:
 ``pip -r requirements.txt``
 6. Once installed, run the following command to launch service:  
 ``python app.py``
+If you encounter OS errr=or or Permission error, You might have to change the permissions of the ``app.py`` file as follows:  
+``chmod 644 app.py ``
 7. Open http://127.0.0.1:5001/ to access the service.
 8. Happy Segmenting
 
