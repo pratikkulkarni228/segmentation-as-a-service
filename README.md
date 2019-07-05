@@ -33,8 +33,8 @@ Using PIP:
 5. [IMPORTANT] Run the following command (DO NOT SKIP THIS STEP):  
 ``pip -r requirements.txt``
 6. Once installed, run the following command to launch service:  
-``python app.py``
-If you encounter OS errr=or or Permission error, You might have to change the permissions of the ``app.py`` file as follows:  
+``python app.py``  
+If you encounter OS error or Permission error, You might have to change the permissions of the ``app.py`` file as follows:  
 ``chmod 644 app.py ``
 7. Open http://127.0.0.1:5001/ to access the service.
 8. Happy Segmenting
