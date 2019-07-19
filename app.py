@@ -12,6 +12,7 @@ from PIL import Image
 import utils
 import tensorflow as tf
 import requests
+import validators
 
 app = Flask(__name__)             # create an app instance
 
@@ -103,9 +104,14 @@ def home():
 def predict():
     if request.method == 'POST':
         url = request.form['url']
-        req = requests.get(url)
+        url = url.strip()
+        if validators.url(url):
+            req = requests.get(url)
+        else:
+            return render_template('error.html')
+        #req = requests.get(url)
         if req.status_code == 200:        
-            print('THE type of URL is',type(url))
+            print('\n\nTHE type of URL is',type(url))
             #data = [comment]
             run_visualization(MODEL,url)
             full_filename = os.path.join(os.getcwd(), 'seg_image.jpg')
