@@ -3,3 +3,4 @@ opencv-python
 Flask
 Pillow
 requests
+validators
