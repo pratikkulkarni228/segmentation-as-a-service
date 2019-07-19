@@ -30,6 +30,10 @@ Using PIP:
 ``pip3 install virtualenv``  
 ``virtualenv myenv``  
 ``source mypython/bin/activate``  
+OR  
+WINDOWS:  
+``virtualenv myenv``  
+``.\myenv\Scripts\activate``  
 5. [IMPORTANT] Run the following command (DO NOT SKIP THIS STEP):  
 ``pip3 install -r requirements.txt``
 6. Once installed, run the following command to launch service:  
