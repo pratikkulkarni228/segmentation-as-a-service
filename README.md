@@ -43,6 +43,9 @@ If you encounter OS error or Permission error, You might have to change the perm
 7. Open http://127.0.0.1:5001/ to access the service.
 8. Happy Segmenting
 
+### Process Pipeline:  
+![alt text](https://github.com/pratikkulkarni228/segmentation-as-a-service/blob/master/figs/seg-proc.png)
+
 ### Steps involving entire training process:
 1. Register and Download the following files from cityscapes dataset website. leftimg gtfine
 ``leftImg8bit_trainvaltest.zip (11GB) [md5]`` and ``gtFine_trainvaltest.zip (241MB) [md5]``
